@@ -36,7 +36,7 @@
     {
       "name": "Changelog",
       "icon": "shapes",
-      "url": "https://cantae.app"
+      "url": "help"
     }
   ],
   "topAnchor": {
@@ -53,8 +53,6 @@
         "documentation/getting-started/introduction",
         "documentation/getting-started/quick-start",
         "documentation/getting-started/interface",
-        "documentation/getting-started/troubleshooting",
-        "documentation/getting-started/changelog",
         {
           "group": "Pages",
           "pages": [
@@ -72,9 +70,10 @@
       ]
     },
     {
-      "group": "Getting started",
+      "group": "Help",
       "pages": [
-        "guides/getting-started/introduction"
+        "help/changelog",
+        "help/troubleshooting"
       ]
     },
     {
