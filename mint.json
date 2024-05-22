@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Starter Kit",
+  "name": "Hoppscotch Documentation",
   "logo": {
     "dark": "/logo/dark.svg",
     "light": "/logo/light.svg"
@@ -15,77 +15,222 @@
       "to": "#07C983"
     }
   },
-  "topbarLinks": [
-    {
-      "name": "Support",
-      "url": "mailto:hi@mintlify.com"
-    }
-  ],
+  "topbarLinks": [],
   "topbarCtaButton": {
-    "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
+    "type": "github",
+    "url": "https://github.com/hoppscotch/hoppscotch"
   },
-  "tabs": [
-    {
-      "name": "API Reference",
-      "url": "api-reference"
-    }
-  ],
+  "tabs": [],
   "anchors": [
     {
       "name": "Documentation",
-      "icon": "book-open-cover",
-      "url": "https://mintlify.com/docs"
+      "icon": "lines-leaning",
+      "url": "documentation"
     },
     {
-      "name": "Community",
-      "icon": "slack",
-      "url": "https://mintlify.com/community"
+      "name": "Guides",
+      "icon": "check-double",
+      "url": "guides"
+    },
+    {
+      "name": "Support",
+      "icon": "question",
+      "url": "support"
+    },
+    {
+      "name": "Download",
+      "icon": "angles-down",
+      "url": "https://hoppscotch.com/download"
     },
     {
       "name": "Blog",
-      "icon": "newspaper",
-      "url": "https://mintlify.com/blog"
+      "icon": "quote-left",
+      "url": "https://hoppscotch.com/blog"
+    },
+    {
+      "name": "Changelog",
+      "icon": "shapes",
+      "url": "https://hoppscotch.com/changelog"
     }
   ],
+  "topAnchor": {
+    "icon": "house",
+    "name": "Home"
+  },
+  "primaryTab": {
+    "name": "Home"
+  },
   "navigation": [
     {
-      "group": "Get Started",
+      "group": "Getting started",
       "pages": [
-        "introduction",
-        "quickstart",
-        "development"
+        "documentation/getting-started/introduction",
+        "documentation/getting-started/quick-start",
+        "documentation/getting-started/clients",
+        "documentation/getting-started/setup",
+        "documentation/getting-started/troubleshooting",
+        {
+          "group": "RESTful API",
+          "pages": [
+            "documentation/getting-started/rest/creating-a-request",
+            "documentation/getting-started/rest/request-parameters",
+            "documentation/getting-started/rest/organizing-requests",
+            "documentation/getting-started/rest/environment-variables",
+            "documentation/getting-started/rest/auth-tokens",
+            "documentation/getting-started/rest/uploading-data",
+            "documentation/getting-started/rest/pre-request-scripts",
+            "documentation/getting-started/rest/tests"
+          ]
+        },
+        {
+          "group": "GraphQL API",
+          "pages": [
+            "documentation/getting-started/graphql/creating-a-query",
+            "documentation/getting-started/graphql/using-variables"
+          ]
+        },
+        {
+          "group": "Realtime API",
+          "pages": [
+            "documentation/getting-started/realtime/websocket",
+            "documentation/getting-started/realtime/socket-io",
+            "documentation/getting-started/realtime/sse",
+            "documentation/getting-started/realtime/mqtt"
+          ]
+        }
       ]
     },
     {
-      "group": "Essentials",
+      "group": "Clients",
       "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation",
-        "essentials/reusable-snippets"
+        "documentation/clients/web",
+        "documentation/clients/desktop",
+        "documentation/clients/cli"
       ]
     },
     {
-      "group": "API Documentation",
+      "group": "Protocols",
       "pages": [
-        "api-reference/introduction"
+        "documentation/protocols/rest",
+        "documentation/protocols/graphql",
+        "documentation/protocols/realtime"
       ]
     },
     {
-      "group": "Endpoint Examples",
+      "group": "Features",
       "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/delete"
+        "documentation/features/workspaces",
+        "documentation/features/collections",
+        "documentation/features/variables",
+        "documentation/features/environments",
+        "documentation/features/history",
+        "documentation/features/spotlight",
+        "documentation/features/shortcuts",
+        "documentation/features/scripts",
+        "documentation/features/importer",
+        "documentation/features/customization",
+        "documentation/features/inspections",
+        "documentation/features/cookies",
+        "documentation/features/snippets",
+        "documentation/features/interceptor",
+        "documentation/features/widgets",
+        "documentation/features/authorization",
+        "documentation/features/rest-api-testing",
+        "documentation/features/graphql-api-testing",
+        "documentation/features/realtime-api-testing"
+      ]
+    },
+    {
+      "group": "Self-Host",
+      "pages": [
+        "documentation/self-host/getting-started",
+        {
+          "group": "Community Edition",
+          "pages": [
+            "documentation/self-host/community-edition/getting-started",
+            "documentation/self-host/community-edition/prerequisites",
+            "documentation/self-host/community-edition/install-and-build",
+            "documentation/self-host/community-edition/setup-and-access",
+            "documentation/self-host/community-edition/admin-dashboard",
+            "documentation/self-host/community-edition/deploy-and-upgrade",
+            "documentation/self-host/community-edition/telemetry"
+          ]
+        },
+        {
+          "group": "Enterprise Edition",
+          "pages": [
+            "documentation/self-host/enterprise-edition/getting-started",
+            "documentation/self-host/enterprise-edition/prerequisites",
+            "documentation/self-host/enterprise-edition/install-and-build",
+            "documentation/self-host/enterprise-edition/setup-and-access",
+            "documentation/self-host/enterprise-edition/admin-dashboard",
+            "documentation/self-host/enterprise-edition/deploy-and-upgrade",
+            "documentation/self-host/enterprise-edition/telemetry"
+          ]
+        }
+      ]
+    },
+    {
+      "group": "Resources",
+      "pages": [
+        "documentation/community",
+        "documentation/contributors",
+        "documentation/changelog",
+        "documentation/develop",
+        "documentation/i18n"
+      ]
+    },
+    {
+      "group": "Getting started",
+      "pages": ["guides/getting-started/introduction"]
+    },
+    {
+      "group": "Articles",
+      "pages": [
+        "guides/articles",
+        "guides/articles/restful-api-testing-with-hoppscotch",
+        "guides/articles/improving-your-api-workflow",
+        "guides/articles/understanding-graphql",
+        "guides/articles/manage-an-enterprise-license-key",
+        "guides/articles/audit-logs"
+      ]
+    },
+    {
+      "group": "Getting started",
+      "pages": [
+        "support/getting-started/introduction",
+        "support/getting-started/faq",
+        "support/getting-started/contact"
+      ]
+    },
+    {
+      "group": "Support",
+      "pages": ["support/solutions/community", "support/solutions/experts"]
+    },
+    {
+      "group": "Resources",
+      "pages": [
+        "support/license",
+        "support/code-of-conduct",
+        "support/security-policy",
+        "support/privacy",
+        "support/terms"
       ]
     }
   ],
   "footerSocials": {
-    "x": "https://x.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://www.linkedin.com/company/mintsearch"
-  }
+    "twitter": "https://twitter.com/hoppscotch_io",
+    "discord": "https://hoppscotch.io/discord"
+  },
+  "feedback": {
+    "raiseIssue": true,
+    "suggestEdit": true,
+    "thumbsRating": true
+  },
+  "redirects": [
+    {
+      "source": "/source/path",
+      "destination": "/destination/path"
+    }
+  ]
 }
