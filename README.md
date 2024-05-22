@@ -1,4 +1,4 @@
-# Hoppscotch Documentation
+# Cantaê Documentation
 
 ## Local Development
 
