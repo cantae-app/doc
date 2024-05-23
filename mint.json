@@ -63,8 +63,8 @@
             "documentation/getting-started/pages/playlist",
             "documentation/getting-started/pages/search",
             "documentation/getting-started/pages/queue",
-            "documentation/getting-started/pages/lyrics",
-            "documentation/getting-started/pages/settings"
+            "documentation/getting-started/pages/settings",
+            "documentation/getting-started/pages/lyrics"
           ]
         }
       ]

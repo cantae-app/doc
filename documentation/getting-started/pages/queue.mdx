@@ -1,5 +1,34 @@
 ---
 sidebarTitle: Queue
 title: Queue
-description: Cantaê has a simple and intuitive UI. The UI is divided into multiple sections
+description: Add songs to the queue
 ---
+
+## How queue works?
+
+Queue is a list of songs that you can add to play next. You can add or remove songs to the queue by clicking <span className="text-gray-800 dark:text-white">'•••'</span> more actions button and clicking on <span className="text-gray-800 dark:text-white">'Add to Queue'</span> or <span className="text-gray-800 dark:text-white">'Remove from Queue'</span> button.
+
+<Frame caption="Queue list">
+    <img className="block border border-black/5 rounded-md dark:border-white/5 dark:hidden" src="/assets/images/queue-light.png" />
+    <img className="hidden border border-black/5 rounded-md dark:border-white/5 dark:block" src="/assets/images/queue-dark.png" />
+</Frame>
+
+<Steps>
+  <Step title="Sorting">
+    It is possible to sort a song by dragging and dropping it to the desired position in the queue list.
+    <Frame caption="Sorting song on queue">
+        <img className="block border border-black/5 rounded-md dark:border-white/5 dark:hidden" src="/assets/images/sort-queue-light.png" />
+        <img className="hidden border border-black/5 rounded-md dark:border-white/5 dark:block" src="/assets/images/sort-queue-dark.png" />
+    </Frame>
+  </Step>
+  <Step title="Remove Songs">
+    Click on <span className="text-gray-800 dark:text-white">'•••'</span> more actions button to remove songs from the queue
+    <Frame caption="More actions">
+        <img className="block border border-black/5 rounded-md dark:border-white/5 dark:hidden" src="/assets/images/remove-song-queue-light.png" />
+        <img className="hidden border border-black/5 rounded-md dark:border-white/5 dark:block" src="/assets/images/remove-song-queue-dark.png" />
+    </Frame>
+  </Step>
+  <Step title="Clear Up Next List">
+    Click on <span className="text-gray-800 dark:text-white">'Clear Queue'</span> button to remove all songs from the Up Next list
+  </Step>
+</Steps>

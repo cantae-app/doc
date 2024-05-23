@@ -1,5 +1,70 @@
 ---
 sidebarTitle: Settings
 title: Settings
-description: Cantaê has a simple and intuitive UI. The UI is divided into multiple sections
+description: Customize app appearance, music directories, and player settings
 ---
+
+Settings page is divided into three sections: **Application**, **Player**, and **Music Directories**.
+
+<Frame caption="Settings page">
+  <img className="block border border-black/5 rounded-md dark:border-white/5 dark:hidden" src="/assets/images/settings-light.png" />
+  <img className="hidden border border-black/5 rounded-md dark:border-white/5 dark:block" src="/assets/images/settings-dark.png" />
+</Frame>
+
+<Tabs>
+  <Tab title="Application">
+    <Steps>
+        <Step iconType="light" icon="circle-info" title="About">
+            In the "About" section, you can find information about the software version, operating system, and architecture. Click on the refresh button to check for updates.
+            <Frame>
+                <img className="block border border-black/5 rounded-md dark:border-white/5 dark:hidden" src="/assets/images/settings-about-light.png" />
+                <img className="hidden border border-black/5 rounded-md dark:border-white/5 dark:block" src="/assets/images/settings-about-dark.png" />
+            </Frame>
+        </Step>
+        <Step iconType="light" icon="brush" title="Color Theme">
+            Choose between seven primary color themes: Base, Yellow, Green, Blue, Orange, Red, and Violet.
+            <Frame>
+                <img className="block border border-black/5 rounded-md dark:border-white/5 dark:hidden" src="/assets/images/settings-color-light.png" />
+                <img className="hidden border border-black/5 rounded-md dark:border-white/5 dark:block" src="/assets/images/settings-color-dark.png" />
+            </Frame>
+        </Step>
+        <Step iconType="light" icon="moon" title="Dark Mode">
+            Enable or disable dark mode.
+            <Frame>
+                <img className="block border border-black/5 rounded-md dark:border-white/5 dark:hidden" src="/assets/images/settings-darkmode-light.png" />
+                <img className="hidden border border-black/5 rounded-md dark:border-white/5 dark:block" src="/assets/images/settings-darkmode-dark.png" />
+            </Frame>
+        </Step>
+        <Step iconType="light" icon="language" title="Language">
+            Change the system language, which is available in four languages: English, Portuguese, Spanish, and Japanese.
+            <Frame>
+                <img className="block border border-black/5 rounded-md dark:border-white/5 dark:hidden" src="/assets/images/settings-language-light.png" />
+                <img className="hidden border border-black/5 rounded-md dark:border-white/5 dark:block" src="/assets/images/settings-language-dark.png" />
+            </Frame>
+        </Step>
+        <Step iconType="light" icon="wifi" title="Ngrok Server">
+            If you want to access the music Webapp from anywhere via the internet, you need to set up an Ngrok Access Key. To obtain an Ngrok Access Key, you need to create an account on the[Ngrok website](https://ngrok.com/). Click on the save button on the right to apply the changes and restart the application.
+            <Frame>
+                <img className="block border border-black/5 rounded-md dark:border-white/5 dark:hidden" src="/assets/images/settings-ngrok-light.png" />
+                <img className="hidden border border-black/5 rounded-md dark:border-white/5 dark:block" src="/assets/images/settings-ngrok-dark.png" />
+            </Frame>
+        </Step>
+        <Step iconType="light" icon="mobile-button" title="Web player access">
+            The Web player address is the URL that you can use to access the music Webapp from your smartphone, tablet, or any other device with a web browser. After selecting the network interface, a QR code will be generated with the address to access the Webapp. Click on the QR code button to open the QR code image.
+
+            <Info>The QR code image will be displayed on [Lyrics](/documentation/getting-started/pages/lyrics) page for singers</Info>
+
+            <Frame>
+                <img className="block border border-black/5 rounded-md dark:border-white/5 dark:hidden" src="/assets/images/settings-webplayer-light.png" />
+                <img className="hidden border border-black/5 rounded-md dark:border-white/5 dark:block" src="/assets/images/settings-webplayer-dark.png" />
+            </Frame>
+        </Step>
+    </Steps>
+  </Tab>
+  <Tab title="Player">
+    ✌️ Here's content that's only inside the second Tab.
+  </Tab>
+  <Tab title="Music Directories">
+    💪 Here's content that's only inside the third Tab.
+  </Tab>
+</Tabs>
