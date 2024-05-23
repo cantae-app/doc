@@ -1,10 +1,66 @@
 ---
 sidebarTitle: Songs
 title: Songs
-description: Cantaê songs page
+description: All songs in one place
 ---
 
-<Frame caption="Songs page">
+In this page, you can find all the songs available in the application. You can search for a specific song, filter and sort by name, artist or album.
+If you want to see more about an [Artist](/documentation/getting-started/pages/artist) or [Album](/documentation/getting-started/pages/album), you can click on the respective link and see all the songs related to it.
+
+<Frame caption="Song page">
   <img className="block border border-black/5 rounded-md dark:border-white/5 dark:hidden" src="/assets/images/music-light.png" />
   <img className="hidden border border-black/5 rounded-md dark:border-white/5 dark:block" src="/assets/images/music-dark.png" />
 </Frame>
+
+## How to add songs
+
+There are two ways to add songs to the application:
+
+<CardGroup cols={2}>
+  <Card title="Empty directories" icon="square-1">
+    Click on button <button className="bg-primary rounded-md text-white px-2 py-1 text-sm">Add Songs</button> and select the directory where the songs are located.
+  </Card>
+  <Card title="Settings music directories" icon="square-2">
+    Navigate to [Settings](/documentation/getting-started/pages/settings) -> click on the tab <span className="text-gray-800 dark:text-white">Music Directories</span> and on button <button className="bg-primary rounded-md text-white px-2 py-1 text-sm">Add Directory</button>
+  </Card>
+</CardGroup>
+
+After adding directories, the application will scan and add the songs to the database. This process may take some time depending on the number of songs.
+
+## What formats are supported?
+
+The application supports the following formats:
+- MP3,
+- MP4,
+- M4A,
+- WAV,
+- AAC,
+- OPUS,
+- OGG,
+- WMA,
+- FLAC.
+
+## How should the playback and vocals files be named?
+
+The application uses the following naming convention to identify the playback and vocals files:
+- Playback: `song_name - (Instrumental).extension`,
+- Vocals: `song_name - (Vocals).extension`.
+- Example: `Earth, Wind & Fire - September - (Instrumental).mp3`.
+
+<Warning>The name should end with the type (instrumental) or (vocals) so that the player can correctly identify the type of audio.</Warning>
+
+## How to play a song?
+
+To play a song, click on the button <button className="bg-primary rounded-full text-white px-2 py-1 text-sm">►</button> to play all songs or on the play button <span className="text-gray-800 dark:text-white">►</span> next to the album cover. The song will start playing at the bottom of the page.
+
+## More actions
+
+<Frame caption="More actions">
+  <img className="block border border-black/5 rounded-md dark:border-white/5 dark:hidden" src="/assets/images/more-actions-light.png" />
+  <img className="hidden border border-black/5 rounded-md dark:border-white/5 dark:block" src="/assets/images/more-actions-dark.png" />
+</Frame>
+
+You can perform the following actions on a song:
+- Add to queue,
+- Add to playlist,
+- Add to favorites,
