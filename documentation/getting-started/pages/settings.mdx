@@ -62,9 +62,42 @@ Settings page is divided into three sections: **Application**, **Player**, and *
     </Steps>
   </Tab>
   <Tab title="Player">
-    ✌️ Here's content that's only inside the second Tab.
+     <Steps>
+        <Step iconType="light" icon="circle-info" title="Save Lyrics">
+            When song doesn't have lyrics, the app will search for the lyrics and save it in the song file. You can enable or disable this feature.
+            <Frame>
+                <img className="block border border-black/5 rounded-md dark:border-white/5 dark:hidden" src="/assets/images/settings-save-lyrics-light.png" />
+                <img className="hidden border border-black/5 rounded-md dark:border-white/5 dark:block" src="/assets/images/settings-save-lyrics-dark.png" />
+            </Frame>
+        </Step>
+        <Step iconType="light" icon="brush" title="Show QR code">
+            Enable or disable the QR code display on the player screen. The QR code is used to access the music Webapp from your smartphone, tablet, or any other device with a web browser.
+            <Frame>
+                <img className="block border border-black/5 rounded-md dark:border-white/5 dark:hidden" src="/assets/images/settings-show-qrcode-light.png" />
+                <img className="hidden border border-black/5 rounded-md dark:border-white/5 dark:block" src="/assets/images/settings-show-qrcode-dark.png" />
+            </Frame>
+        </Step>
+        <Step iconType="light" icon="moon" title="Karaoke Mode">
+            Enable or disable karaoke mode. In karaoke mode, autoplay is disabled, and the lyrics page will show 'waiting for the singer' and the score.
+            <Frame>
+                <img className="block border border-black/5 rounded-md dark:border-white/5 dark:hidden" src="/assets/images/settings-karaoke-light.png" />
+                <img className="hidden border border-black/5 rounded-md dark:border-white/5 dark:block" src="/assets/images/settings-karaoke-dark.png" />
+            </Frame>
+        </Step>
+        <Step iconType="light" icon="language" title="Queue Limit">
+            Set the maximum number of songs in the queue by singer. The default value is 2.
+            <Frame>
+                <img className="block border border-black/5 rounded-md dark:border-white/5 dark:hidden" src="/assets/images/settings-queue-limit-light.png" />
+                <img className="hidden border border-black/5 rounded-md dark:border-white/5 dark:block" src="/assets/images/settings-queue-limit-dark.png" />
+            </Frame>
+        </Step>
+    </Steps>
   </Tab>
   <Tab title="Music Directories">
-    💪 Here's content that's only inside the third Tab.
+  In the "Music Directories" section, you can add, remove, or reindex songs. Click on <button className="bg-primary rounded-md text-white px-2 py-1 text-sm">Add Directory</button> button to select the directory where the songs are located. Click on <button className="bg-gray-500 rounded-md text-white px-2 py-1 text-sm">Reindex</button> button to reindex the songs in all directories. and on Trash icon button <Icon icon="trash-can" iconType="solid" /> to remove the directory.
+    <Frame >
+        <img className="block border border-black/5 rounded-md dark:border-white/5 dark:hidden" src="/assets/images/settings-directories-light.png" />
+        <img className="hidden border border-black/5 rounded-md dark:border-white/5 dark:block" src="/assets/images/settings-directories-dark.png" />
+    </Frame>
   </Tab>
 </Tabs>
