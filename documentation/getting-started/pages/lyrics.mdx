@@ -1,5 +1,25 @@
 ---
 sidebarTitle: Lyrics
 title: Lyrics
-description: Cantaê has a simple and intuitive UI. The UI is divided into multiple sections
+description: Synced lyrics
 ---
+
+<Frame caption="Lyrics page">
+  <img className="border border-black/5 rounded-md dark:border-white/5" src="/assets/images/lyrics.png" />
+</Frame>
+
+<Steps>
+  <Step title="Search Lyrics">
+    If you don't have the lyrics of a song or if the lyrics are incorrect, you can search for them by clicking the <span className="text-gray-800 dark:text-white">'Search Lyric'</span> button. A new window will automatically open with a list of possible songs. Simply select the desired song and click the 'Save' button.
+    <Frame caption="Search lyrics">
+        <img className="block border border-black/5 rounded-md dark:border-white/5 dark:hidden" src="/assets/images/lyrics-search-light.png" />
+        <img className="hidden border border-black/5 rounded-md dark:border-white/5 dark:block" src="/assets/images/lyrics-search-dark.png" />
+    </Frame>
+  </Step>
+  <Step title="Support for 2 Monitors">
+    If you have a TV or a second monitor and want to display the synchronized lyrics window, click the <span className="text-gray-800 dark:text-white"><Icon icon="arrow-up-right-from-square"/></span> button located in the upper right corner.
+  </Step>
+  <Step title="Webapp access">
+    The QR code to access the web app will be displayed and will alternate with the album cover. To show the QR code for singers to access the web app, go to the [Settings](/documentation/getting-started/pages/settings) page. click on the tab <span className="text-gray-800 dark:text-white">Player</span>.
+  </Step>
+</Steps>
