@@ -80,16 +80,13 @@
       "group": "Getting started",
       "pages": [
         "support/getting-started/introduction",
-        "support/getting-started/faq",
-        "support/getting-started/contact"
+        "support/getting-started/faq"
       ]
     },
     {
       "group": "Resources",
       "pages": [
         "support/license",
-        "support/code-of-conduct",
-        "support/security-policy",
         "support/privacy",
         "support/terms"
       ]

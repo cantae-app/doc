@@ -6,38 +6,24 @@ description: Facing issues with cantaê? Check out this page to resolve them.
 
 If you're facing issues with cantaê, you can try the following steps to resolve them.
 
-## Connectivity
+## Log files
 
-If cantaê fails to send your request, it could be because you may be experiencing connectivity issues. Check your connection by attempting to open a page in your web browser.
+Check the log files for any errors. You can find the log files in the following locations:
+- on Linux: ~/.config/\{app name}/logs/main.log
+- on macOS: ~/Library/Logs/\{app name}/main.log
+- on Windows: %USERPROFILE%\AppData\Roaming\\\{app name}\logs\main.log
 
 ## Firewalls
 
-Sometimes firewalls may be configured to block non-browser connections. You might need to contact your network administrator so that cantaê can work seamlessly.
+Sometimes firewalls may block cantaê from accessing the internet. You can try disabling the firewall temporarily to see if it resolves the issue.
 
-## Incorrect protocol
+## Antivirus
 
-You might have specified the wrong protocol, check if you're using `https://` or `http://` in your URL or vice-versa.
+Antivirus software may sometimes block cantaê from running. You can try disabling the antivirus temporarily to see if it resolves the issue.
 
-## cantaê errors
+## Reinstall
 
-It could also be possible that cantaê might be making invalid requests to your API server. You can confirm this by checking your server logs (if available). If you believe this is happening, do get in touch with the cantaê team.
+If none of the above steps work, you can try reinstalling cantaê. You can download the latest version of cantaê from the [official website](https://cantaê.app).
 
-## CORS restrictions
-
-CORS or Cross-Origin Resource Sharing is a security mechanism built into modern web browsers. It may cause the following error when testing API endpoints or some other API endpoints with cantaê.
-
-This is because the API not sending the proper API headers (`Access-Control-Allow-Origin`) and can be solved in two ways.
-
-1. Ask whoever manages the API to add CORS support.
-2. Use Middleware like [ProxyScotch](https://github.com/cantaê/proxyscotch) for hosted APIs & the [cantaê Browser Extension](https://github.com/cantaê/cantaê-extension) for locally served APIs, and enable it in the "**Interceptor**" section of "**Settings**".
-
-## Something went wrong
-
-If you're still facing issues, with an error message that says "Something went wrong", help us to better understand the issue by:
-
-1. Opening the developer tools in your browser (usually by pressing `F12` or `Ctrl/Cmd`+`Shift`+`I`).
-2. Switch to the "**Console**" tab.
-3. Reproduce the issue.
-4. Take a screenshot of the console and send it to us.
-
-<Info>Report a bug by [opening a new issue](https://github.com/cantaê/cantaê/issues/new/choose).</Info>
+## Contact
+If you have any questions, feel free to [contact us](mailto:support@cantaê.app).
