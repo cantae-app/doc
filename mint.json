@@ -24,6 +24,11 @@
       "url": "documentation"
     },
     {
+      "name": "Webapp",
+      "icon": "mobile-screen-button",
+      "url": "webapp"
+    },
+    {
       "name": "Support",
       "icon": "question",
       "url": "support"
@@ -65,6 +70,21 @@
             "documentation/getting-started/pages/queue",
             "documentation/getting-started/pages/settings",
             "documentation/getting-started/pages/lyrics"
+          ]
+        }
+      ]
+    },
+    {
+      "group": "Getting started",
+      "pages": [
+        "webapp/introduction",
+        {
+          "group": "Pages",
+          "pages": [
+            "webapp/pages/songs",
+            "webapp/pages/player",
+            "webapp/pages/ranking",
+            "webapp/pages/settings"
           ]
         }
       ]

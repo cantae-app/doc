@@ -1,0 +1,55 @@
+---
+sidebarTitle: Player
+title: Player
+description:
+---
+
+In this tab, you can control the volume of the songs, view the lyrics in real time, see queue list and send emoji reactions to the karaoke screen.
+
+<Warning>
+    Playing or pausing a song, adjusting the volume, and removing songs from the queue can only be done if you are the singer for the song.
+</Warning>
+
+<Frame caption="Songs tab">
+  <img className="block border border-black/5 rounded-md dark:border-white/5 dark:hidden" src="/assets/images/webapp-player-light.png" />
+  <img className="hidden border border-black/5 rounded-md dark:border-white/5 dark:block" src="/assets/images/webapp-player-dark.png" />
+</Frame>
+
+<Steps>
+  <Step title="Adjusting the volume">
+    You can adjust the volume of the song by dragging the volume slider to the desired level
+    <Frame caption="Sorting song on queue">
+        <img className="block border border-black/5 rounded-md dark:border-white/5 dark:hidden" src="/assets/images/webapp-volume-light.png" />
+        <img className="hidden border border-black/5 rounded-md dark:border-white/5 dark:block" src="/assets/images/webapp-volume-dark.png" />
+    </Frame>
+  </Step>
+  <Step title="Send emoji reactions">
+    Click on the emoji icon to send emoji reactions to the [karaoke screen](/documentation/getting-started/pages/lyrics).
+    <Frame caption="More actions">
+        <img className="block border border-black/5 rounded-md dark:border-white/5 dark:hidden" src="/assets/images/webapp-emoji-light.png" />
+        <img className="hidden border border-black/5 rounded-md dark:border-white/5 dark:block" src="/assets/images/webapp-emoji-dark.png" />
+    </Frame>
+  </Step>
+  <Step title="Playing or pausing">
+    You can play or pause the song by clicking on the play button.
+  </Step>
+  <Step title="Queue">
+    You can view the list of songs in the queue and remove your song by clicking on it.
+    <CardGroup cols={2}>
+        <Frame caption="Queue list">
+            <img className="block border border-black/5 rounded-md dark:border-white/5 dark:hidden" src="/assets/images/webapp-queue-light.png" />
+            <img className="hidden border border-black/5 rounded-md dark:border-white/5 dark:block" src="/assets/images/webapp-queue-dark.png" />
+        </Frame>
+        <Frame caption="Remove song from queue">
+            <img className="block border border-black/5 rounded-md dark:border-white/5 dark:hidden" src="/assets/images/webapp-queue-dialog-light.png" />
+            <img className="hidden border border-black/5 rounded-md dark:border-white/5 dark:block" src="/assets/images/webapp-queue-dialog-dark.png" />
+        </Frame>
+    </CardGroup>
+  </Step>
+  <Step title="Lyrics">
+    You can view the lyrics of the song in real time clicking on expanded button.
+    <Frame caption="Lyrics">
+        <img className="border border-black/5 rounded-md dark:border-white/5" src="/assets/images/webapp-lyrics.png" />
+    </Frame>
+  </Step>
+</Steps>
