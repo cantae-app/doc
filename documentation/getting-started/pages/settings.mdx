@@ -85,7 +85,7 @@ Settings page is divided into three sections: **Application**, **Player**, and *
             </Frame>
         </Step>
         <Step iconType="light" icon="moon" title="Enable Score">
-            The scoring is based on the timing and accuracy of the notes. This process uses AI to identify the vocal notes before each song, which may consume more CPU/GPU processing and take some time depending on your hardware.
+            The score is based on timing and note accuracy. This process uses AI to identify vocal notes before each song, which can consume more CPU/GPU processing and take some time depending on your hardware. A **.mid** file will be created in the music directory with the same name as the selected song. You can also use another [free tool](https://github.com/DamRsn/NeuralNote) to generate the **.mid** files.
             <Frame>
                 <img className="block border border-black/5 rounded-md dark:border-white/5 dark:hidden" src="/assets/images/settings-score-light.png" />
                 <img className="hidden border border-black/5 rounded-md dark:border-white/5 dark:block" src="/assets/images/settings-score-dark.png" />
@@ -103,6 +103,13 @@ Settings page is divided into three sections: **Application**, **Player**, and *
             <Frame>
                 <img className="block border border-black/5 rounded-md dark:border-white/5 dark:hidden" src="/assets/images/settings-queue-limit-light.png" />
                 <img className="hidden border border-black/5 rounded-md dark:border-white/5 dark:block" src="/assets/images/settings-queue-limit-dark.png" />
+            </Frame>
+        </Step>
+        <Step iconType="light" icon="mic" title="Input device">
+            Select the input device to use for the microphone. It will be used to calculate the score in real time
+            <Frame>
+                <img className="block border border-black/5 rounded-md dark:border-white/5 dark:hidden" src="/assets/images/settings-mic-light.png" />
+                <img className="hidden border border-black/5 rounded-md dark:border-white/5 dark:block" src="/assets/images/settings-mic-dark.png" />
             </Frame>
         </Step>
     </Steps>
